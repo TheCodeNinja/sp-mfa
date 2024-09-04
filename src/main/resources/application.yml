@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: mfa-server
+  data:
+    mongodb:
+#      uri: mongodb://admin:pass1234@localhost:27017/mfa-server
+      host: localhost
+      port: 27017
+      database: mfa-server
+      username: admin
+      password: pass1234
+      authentication-database: admin
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 0bbec90721d427
+    password: d57996f500e850
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            required: true
+            enable: true
